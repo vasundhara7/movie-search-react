@@ -18,15 +18,8 @@ class MovieList extends React.Component {
   renderMovies = () => {
     const { movies } = this.props;
     const { error } = this.props;
-    console.log("errrrr", error);
     return movies.map((movie, key) => (
       <div className="twelve wide tablet five wide computer column " key={key}>
-        {/* {movie.Title}
-        <br />
-        {movie.imdbID}
-        <button value={movie.Title} onClick={this.getInfo}>
-          get info
-        </button> */}
         <div className="ui special cards">
           <div className="card">
             <div className="blurring dimmable image">
@@ -63,17 +56,7 @@ class MovieList extends React.Component {
     const { error } = this.props;
     console.log("here list", movies);
     console.log("ERRRR", error);
-    // if (err !== "") {
-    //   return (
-    //     <>
-    //       <Header history={this.props.history} />
-    //       <div className="ui container">
-    //         <h2 className="ui inverted red header">No movies found!</h2>
-    //         <h3>Try checking the spelling or search for another movie</h3>
-    //       </div>
-    //     </>
-    //   );
-    // } else
+
     if (movies && movies.length) {
       return (
         <>

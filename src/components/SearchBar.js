@@ -7,22 +7,17 @@ import {
   emptyInfo,
   removeMovies,
 } from "../actions";
-import { Link } from "react-router-dom";
 
 class SearchBar extends React.Component {
   state = {
     term: "",
   };
-  //   componentDidMount() {
-  //     this.props.fetchMovies("thor");
-  //   }
 
   handleChange = (e) => {
     this.setState({ [e.target.id]: e.target.value });
   };
   onFormSubmit = (e) => {
     const { history } = this.props;
-    console.log(history, "<===");
     e.preventDefault();
     console.log("submitted term", this.state.term);
 
@@ -35,25 +30,6 @@ class SearchBar extends React.Component {
       history.push("/");
     }
   };
-  //   getInfo = (e) => {
-  //     console.log("the vlaue", e.target.value);
-  //     this.props.emptyInfo();
-  //     this.props.fetchMovieInfo(e.target.value);
-  //     this.props.history.push("/movie/info");
-  //   };
-  //   renderMovies = () => {
-  //     const { movies } = this.props;
-  //     return movies.map((movie, key) => (
-  //       <div key={key}>
-  //         {movie.Title}
-  //         <br />
-  //         {movie.imdbID}
-  //         <button value={movie.Title} onClick={this.getInfo}>
-  //           get info
-  //         </button>
-  //       </div>
-  //     ));
-  //   };
 
   render() {
     const { movies } = this.props;
@@ -73,7 +49,6 @@ class SearchBar extends React.Component {
             />
           </div>
         </form>
-        {/* {movies.length && this.renderMovies()} */}
       </div>
     );
   }

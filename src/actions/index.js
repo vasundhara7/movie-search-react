@@ -14,7 +14,7 @@ export const fetchMovies = (title) => {
         ? dispatch({ type: "SEARCH_MOVIES", payload: response.data })
         : dispatch({ type: "SET_ERROR", payload: response.data.Error });
     } catch (err) {
-      console.log(err, "<====apna error");
+      console.log(err);
     }
   };
 };

@@ -49,22 +49,10 @@ class MovieInfo extends React.Component {
                   <div className="ui subheader">
                     IMDB Rating:{info.imdbRating}
                   </div>
-                  {/* <h3>Ratings</h3>
-                <p>{getRatings()}</p> */}
                   <h3>Cast</h3>
                   <p>{info.Actors}</p>
                   <h3>Plot</h3>
                   <p>{info.Plot}</p>
-                  {/* <div className="ui row">
-                  <div className="column">
-                    <h3>Director</h3>
-                    <p>{info.Director}</p>
-                  </div>
-                  <div className=" column">
-                    <h3>Box Office Collection</h3>
-                    <p>{info.BoxOffice}</p>
-                  </div>
-                </div> */}
                   <div class="ui grid">
                     <div class="ten wide column">
                       <h3>Director</h3>
