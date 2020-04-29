@@ -34,7 +34,7 @@ class MovieInfo extends React.Component {
         <>
           <Header history={this.props.history} />
           <div className="ui container">
-            <div class="ui celled grid">
+            <div class="ui celled grid" style={{ marginTop: 80 }}>
               <div class="row">
                 <div class="six wide column centered">
                   <img src={info.Poster} />

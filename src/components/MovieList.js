@@ -62,7 +62,9 @@ class MovieList extends React.Component {
         <>
           <Header history={this.props.history} />
           <div className="ui container">
-            <h2 className="ui centered inverted red header">Search Results</h2>
+            <h2 className="ui centered inverted red header">
+              Movie Zone - Movies everywhere
+            </h2>
             <div className="ui centered grid">{this.renderMovies()}</div>
           </div>
         </>
