@@ -6,9 +6,9 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 
 class MovieList extends React.Component {
-  componentDidMount() {
-    this.props.fetchMovies("thor");
-  }
+  // componentDidMount() {
+  //   this.props.fetchMovies("thor");
+  // }
   getInfo = (e) => {
     console.log("the vlaue", e.target.value);
     this.props.emptyInfo();
